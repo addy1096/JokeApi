@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke API</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css"
+    />
+  </head>
+  <body>
+    <div class="main bg-indigo-900 grid place-items-center h-screen">
+      <div
+        class="card bg-white flex flex-col p-4 shadow-lg rounded-2xl w-full max-w-lg"
+      >
+        <h1 class="mb-6 text-center text-3xl font-extrabold text-gray-900">
+          JOKE API V2.0
+        </h1> 
+        <div style="min-height: 200px">
+          <div class="name text-gray-800 text-2xl font-medium">
+            <p id="joke"></p>
+          </div>
+          <div class="username text-gray-500">
+            <p id="jokeAnswer"></p>
+          </div>
+        </div>
+        <div class="grid gap-4 grid-cols-2 mt-4">
+          <button
+            class="bg-indigo-900 py-2 px-4 text-white font-semibold rounded shadow-lg"
+            id="getProgrammingJoke"
+          >
+            Get Programming joke
+          </button>
+          <button
+            class="bg-indigo-900 py-2 px-4 text-white font-semibold rounded shadow"
+            id="refreshBtn"
+          >
+            Get random joke
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
